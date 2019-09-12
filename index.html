@@ -43,7 +43,40 @@
             </div>
         </nav>
 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>GIF-Tastic</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron">
+                        <div id="cartoon-buttons"></div>
+                        <div class="container" id="btn">
+                            <form id="cartoon-form">
+                                <label id="add" for="cartoon-input">Enter your favorite cartoon:</label>
+                                <input type="text" class="form-control" id="cartoon-input">
+                            </form>
+                            <button onclick="submitButtonClicked()" type="button" id="add-cartoon"
+                                class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="cartoon"></div>
+                </div>
+            </div>
+        </div>
         
+        <footer class="bg-dark">
+            <div>
+                Copyright &copy;
+            </div>
+        </footer>
+    </div>
 
     <!-- Optional JavaScript -->
     <script src="assets/javascript/app.js"></script>
