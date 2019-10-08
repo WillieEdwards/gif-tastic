@@ -1,13 +1,17 @@
 body {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.links {
+  text-align: right;
 }
 
 h1 {
@@ -50,6 +54,7 @@ p {
   margin-right: 2%;
   margin-bottom: 2%;
 }
+
 
 #add {
   font-family: 'Barriecito', cursive;
