@@ -14,69 +14,41 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <title>gifTastic | Willie Edwards</title>
+    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <title>GIF-Tastic | Willie Edwards</title>
 </head>
 
 <body>
-
-    <div class="main-container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://willieedwards.github.io/bootstrap-portfolio/">Willie Edwards</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://willieedwards.github.io/bootstrap-portfolio/">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="https://willieedwards.github.io/bootstrap-portfolio/portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="https://willieedwards.github.io/bootstrap-portfolio/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>gifTastic</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="jumbotron">
-                        <h2 id="title">Cartoons! Cartoons!</h2>
-                        <div class="container" id="btn">
-                            <form id="cartoon-form">
-                                <label id="add" for="cartoon-input">Submit a cartoon of your choice:</label>
-                                <input type="text" class="form-control" id="cartoon-input">
-                            </form>
-                            <button onclick="submitButtonClicked()" type="button" id="add-cartoon"
-                            class="btn btn-success">Submit</button>
-                        </div>
-                        <div id="cartoon-buttons"></div>
+    <header>
+        <h1 class="text-center">BIKINI BOTTOM GIF-O-MATIC</h1>
+    </header>
+    <br>
+    <br>
+    <div class="container" style="background: transparent;">
+        <div class="container text-center" id="btn" style="background: transparent;">
+            <form id="character-form">
+                <label id="add" for="character-input">Enter your favorite SpongeBob character to create a button:</label>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="character-input" style>
                     </div>
+                    <div class="col-md-3"></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div id="cartoon"></div>
-                </div>
-            </div>
+                <br>
+            </form>
+            <button onclick="submitButtonClicked()" type="button" id="add-character"
+                class="btn btn-success">Submit</button>
+            <br>
+            <br>
+            
+            <div id="character-buttons"><p>Click a button to display GIF images!</p></div>
+            <br>
+            <p>Click an image to start and stop animation!</p>
+            <div id="characters"> </div>
         </div>
-
-        <footer class="bg-dark">
-            <div>
-                Copyright &copy;
-            </div>
-        </footer>
     </div>
 
     <!-- Optional JavaScript -->
