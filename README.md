@@ -31,3 +31,5 @@ https://willieedwards.github.io/gif-tastic/
 **Visual Studio Code** - text editor
 
 **Bootstrap** - framework
+
+**GIPHY** - API call
